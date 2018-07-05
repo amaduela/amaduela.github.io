@@ -22,8 +22,6 @@ gulp.task('copyfonts', function() {
 gulp.task('compilecss', function() {
 	return gulp.src('./src/scss/**/*.scss')
 	  .pipe(sass({outpustyle: 'compressed'}))
-	  // .on('error', notify.onError({title: 'Erro ao compilar SCSS', message: '<% error.message %>'}))
-	  // .on("error", notify.onError("Error: <%= error.message %>"))
 	  .on("error", notify.onError({
         message: "Error: <%= error.message %>",
         title: "Sass"
@@ -40,6 +38,8 @@ gulp.task('compilejs', function() {
 gulp.task('buildjs', function() {
 	return gulp.src([
 		'./node_modules/jquery/dist/jquery.js',
+		'./src/libs/bootstrap/dist/js/bootstrap.min.js',
+		'./src/libs/bootstrap/dist/js/bootstrap.min.js.map',
 		'./src/libs/jquery-mobile/jquery.mobile.custom.js',
 		'./src/js/*.js'
 		])
@@ -50,7 +50,9 @@ gulp.task('buildjs', function() {
 // Task that listen for any sassy modification and then runs a task
 gulp.task('listen', function() {
 	gulp.watch('./src/scss/**/*.scss', ['compilecss']);
-	gulp.watch('./src/js/**/*.js', ['compilejs']);
+	gulp.watch('./src/libs/bootstrap/scss/**/*.scss', ['compilecss']);
+	gulp.watch('./src/js/*.js', ['compilejs']);
 });
 
-gulp.task('default',['copybt', 'buildjs', 'compilecss', 'compilejs', 'copyfa', 'copyfonts', 'listen']);
+// gulp.task('default',['copybt', 'buildjs', 'compilecss', 'compilejs', 'copyfa', 'copyfonts', 'listen']);
+gulp.task('default',['compilecss', 'compilejs', 'listen']);
