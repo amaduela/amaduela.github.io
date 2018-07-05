@@ -4,27 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anselmo Â. Maduela | Resume</title>
-    <!-- font awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="dist/css/style.css">
 </head>
 <body>
     <!-- // Intro -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">Meu CV</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <header id="about">
-      <a class="btn download" href="#" download="">Baixe o meu cv</a>
-      <nav class="display">
-        <a href="#">Sobre</a>
-        <a href="#work">Trabalho</a>
-        <a href="#education">Educação</a>
-        <a href="#contact">Contacto</a>
-      </nav>
-      <div class="content-wrap">
-        <img class="profile-img col-narrow" src="images/me.png" alt="Anselmo Maduela">
-        <div class="col-wide">
-          <h1>Anselmo Maduela</h1>
-          <h2>IT Specialist & Front-End Developer</h2>
-          <p></p>
+      <div class="container wrap">
+        <a class="btn download btn-callout text-white" href="#" download="">Doawload My CV</a>
+        <div class="wrap">
+          <div class="row">
+            <img class="profile-img col-md-4 img-fluid" src="dist/images/me.png" alt="Anselmo Maduela">
+            <div class="col-md-8">
+              <h1>Anselmo Ângelo Maduela</h1>
+              <h4>Front-End Developer</h4>
+              <p>
+                <span class="d-block font-weight-bold mb-6 text-white"><i class="fa fa-comments-o"></i> About Me</span>
+                As a developer, i design and create websites, i'm also responsible for the look of the site and the site's technical aspects, such as its performance and capacity, which are measures of a website's speed and how much traffic the site can handle.
+              </p>
+              <p>See more About what i use to build it <a href="#skills">skills</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -32,118 +59,131 @@
     <main>
         <!-- // Work Experience -->
         <section id="work" class="work">
-          <div class="content-wrap">
-            <h2>Experiência de Trabalho</h2>
-            
+          <div class="container wrap">
+            <h2 class="title"><i class="fa fa-suitcase"></i> Work</h2>
             <!-- Job 1 Details -->
-            <div class="col-narrow">
-              <h3>Front-end Developer & Educator</h3>
-              <p class="uppercase">Independent / Freelance</p>
-              <p>January 2012 - Present</p>
-            </div>
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Front-end Developer</h5>
+                <span class="box-role">Independent / Freelance</span>
+                <span class="box-period">January 2016 - Present</span>
+              </div>
 
-            <div class="col-wide job-description">
-              <p>Provides various front-end related services ranging from development work, consultations, speaking engagements, corporate training, workshops and online courses.</p>
-              <p>See more at <a href="https://madu.ela" target="_blank">madu.ela</a>.</p>
+              <div class="box-description">
+                <p>Provides various front-end related services ranging from development work, consultations, speaking engagements, corporate training, workshops and online courses. <span>See more at <a href="https://madu.ela" target="_blank">madu.ela</a></span>
+                .</p>
+              </div>
             </div>
+              
 
             <!-- Job 2 Details -->
-            <div class="col-narrow">
-              <h3>Director of Curriculum</h3>
-              <p class="uppercase">Ladies Learning Code</p>
-              <p>July 2014 - February 2016</p>
-            </div>
-            <div class="col-wide job-description">
-              <p>Created and managed all curriculum and instructor training for 20+ Canadian chapters. Responsible for all tech related duties.</p>
-              <p>Key contributions:</p>
-              <ul>
-                  <li>Created 9 new workshops focusing on HTML, CSS, JavaScript, jQuery, Wordpress and Responsive Web Design.</li>
-                  <li>Created all Hackapalooza content (2 day conference style event), consisting of 2-4 hour workshop sessions focused on front-end coding languages and web development related topics.</li>
-                  <li>Lead instructor and created curriculum for the Digital Skills part-time program.</li>
-                  <li>Provided training for all instructors, in all Canadian chapters, focusing on creating an inclusive and engaging learning environment.</li>
-                  <li>Maintained the ladieslearningcode.com website.</li>
-                  <li>Created interactive slide deck template for consistent national workshop branding.</li>
-                  <li>Volunteer lead instructor from 2011-2014 for Toronto workshops and several chapter launches.</li>
-              </ul>
-            </div>
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Director of Curriculum</h5>
+                <span class="box-role">Ladies Learning Code</span>
+                <span class="box-period">July 2014 - February 2016</span>
+              </div>
 
-            <!-- Job 3 Details -->
-            <div class="col-narrow">
-              <h3>Lead Front-End Developer</h3>
-              <p class="uppercase">Field ID</p>
-              <p>March 2013 - February 2014</p>
-            </div>
-
-            <div class="col-wide job-description">
-              <p>Lead the front-end development for in-house safety inspection software.</p>
-              <p>Key contributions:</p>
-              <ul>
-                  <li>Responsible for setting code standards for the front-end development.</li>
-                  <li>Created a fully customized front-end framework, including UI/UX.</li>
-                  <li>Standardized the site architecture and design. The framework contains reusable components and extensible classes for customization and flexibility.</li>
-              </ul>
-
-              <p>See my complete work history on <a href="https://www.linkedin.com/in/amaduela/" target="_blank">LinkedIn</a>.</p>
+              <div class="box-description">
+                <p>Created and managed all curriculum and instructor training for 20+ Canadian chapters. Responsible for all tech related duties. <span>Key contributions:</span>
+                </p>
+                <ul>
+                    <li>Created 9 new workshops focusing on HTML, CSS, JavaScript, jQuery, Wordpress and Responsive Web Design.</li>
+                    <li>Created all Hackapalooza content (2 day conference style event), consisting of 2-4 hour workshop sessions focused on front-end coding languages and web development related topics.</li>
+                    <li>Lead instructor and created curriculum for the Digital Skills part-time program.</li>
+                    <li>Provided training for all instructors, in all Canadian chapters, focusing on creating an inclusive and engaging learning environment.</li>
+                    <li>Maintained the ladieslearningcode.com website.</li>
+                    <li>Created interactive slide deck template for consistent national workshop branding.</li>
+                    <li>Volunteer lead instructor from 2011-2014 for Toronto workshops and several chapter launches.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
 
         <!-- // Education -->
         <section id="education" class="education">
-          <div class="content-wrap">
-            <h2>Onde fui Formado?</h2>
+          <div class="container wrap">
+            <h2 class="title"><i class="fa fa-graduation-cap"></i> Education</h2>
 
             <!-- School 1 details. -->
-            <h3>Universidade Pedagogica - Maputo</h3>
-            <p>Licenciatura em Informatica, 2012 - 2015</p>
-            <p>Minor em Desenolvimento de Sistemas.</p>
+            <article class="box">
+              <section>
+                <h4 class="box-title">Universidade Pedagogica</h4>
+                <span class="box-role">Licenciatura em Informática Minor em Desenvolvimento de Sistemas</span>
+                <span class="box-period">2012 - 2015</span>
+              </section>
+            </article>
 
             <!-- School 2 details. -->
-            <h3>Escola Secundária Josina Machel - Maputo</h3>
-            <p>Ensino Secundaria e Pré Universitário, 2007-2011</p>
+            <article class="box">
+              <section>
+                <h4 class="box-title">ISCTEM</h4>
+                <span class="box-role">CCNA Exploration: Fundamentos de Rede</span>
+                <span class="box-period">2014</span>
+              </section>
+            </article>
 
             <!-- School 3 details. -->
-            <h3>Academia de Comunicação - Maputo</h3>
-            <p>Montagem e Reparação de Computadores, 2012</p>
-            <p>Web Design, 2013</p>
+            <article class="box">
+              <section>
+                <h4 class="box-title">Academia de Comunicação</h4>
+                <span class="box-role">Hardware, Web Design</span>
+                <span class="box-period">2012, 2013</span>
+              </section>
+            </article>
 
             <!-- School 4 details. -->
-            <h3>ISCTEM - Maputo</h3>
-            <p>CCNA Exploration: Fundamentos de Rede, 2014</p>
+            <article class="box">
+              <section>
+                <h4 class="box-title">Escola Secundária Josina Machel</h4>
+                <span class="box-role">Ensino Secundário Geral</span>
+                <span class="box-period">2007 - 2011</span>
+              </section>
+            </article>
           </div>
+        </section>
 
-        <!-- // Education -->
+        <!-- // Skills -->
         <section id="skills" class="skills">
-          <div class="content-wrap">
-            <h2>Tecnologias com as quais Trabalho?</h2>
-
-            <!-- School 1 details. -->
-            <h3>Universidade Pedagogica - Maputo</h3>
-            <p>Licenciatura em Informatica, 2012 - 2015</p>
-            <p>Minor em Desenolvimento de Sistemas.</p>
-
-            <!-- School 2 details. -->
-            <h3>Escola Secundária Josina Machel - Maputo</h3>
-            <p>Ensino Secundaria e Pré Universitário, 2007-2011</p>
-
-            <!-- School 3 details. -->
-            <h3>Academia de Comunicação - Maputo</h3>
-            <p>Montagem e Reparação de Computadores, 2012</p>
-            <p>Web Design, 2013</p>
-
-            <!-- School 4 details. -->
-            <h3>ISCTEM - Maputo</h3>
-            <p>CCNA Exploration: Fundamentos de Rede, 2014</p>
-          </div>
+          <div class="container wrap">
+            <h2 class="title"><i class="fa fa-thumbs-up"></i> Skills</h2>
+            <div class="row">
+              <div class="skill col-md-6">
+                <span class="skill-name">HTML & CSS/CSS3+SASS</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+                <span class="skill-name">JS</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                </div>
+                <span class="skill-name">GIT</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                </div>
+                <span class="skill-name">NPM, Bower, Yarn</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 77%;" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100">77%</div>
+                </div>
+                <span class="skill-name">Grunt, Gulp </span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+                </div>
+                <div class="skill-name">WebPack <span class="font-weight-bold float-right">70%</span></div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="70" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
         </section>
     </main>
 
 
     <!-- // Footer & contact info -->
     <footer>
-      <div id="contact" class="content-wrap">
-        <h2>Podemos nos falar?</h2>
-
+      <div id="contact" class="container wrap">
+        <h2 class="title-center">Find Me!</h2>
         <!-- Social media links. Add or remove any networks. -->
         <div class="contact-info">
             <a href="mailto:amaduela@outlook.com">
@@ -151,25 +191,26 @@
               <span class="sr-only">Outlook</span>
             </a>
             <a href="https://madu.ela">
-              <i class="fas fa-globe" aria-hidden="true"></i>
+              <i class="fa fa-globe" aria-hidden="true"></i>
               <span class="sr-only">Google+</span>
             </a>
             <a href="https://twitter.com/anselmoangelomaduela">
-              <i class="fab fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
               <span class="sr-only">Twitter</span>
             </a>
             <a href="https://www.linkedin.com/in/amaduela/">
-              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
               <span class="sr-only">LinkedIn</span>
             </a>
             <a href="http://fb.me/#">
-              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              <i class="fa fa-facebook-f" aria-hidden="true"></i>
               <span class="sr-only">Facebook</span>
             </a>
         </div>
-
-        <p>Copyright © 2018</p>
+        <p>© 2018 Anselmo Maduela. All rights reserved.</p>
       </div>
     </footer>
+    <script src="dist/js/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
 </body>
 </html>
