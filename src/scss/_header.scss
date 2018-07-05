@@ -1,0 +1,50 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  position: relative;
+}
+
+h1, h2 {
+  font-weight: 400;
+}
+
+.wrap {
+  padding:{
+  	top: 60px;
+  	bottom: 60px;
+  }
+  overflow: hidden;
+}
+.btn-callout {
+  @extend .rounded-0, .p-3;
+  background: #EF233C;
+}
+
+
+/* Header and Footer
+-------------------------*/
+header {
+  position: relative;
+  // margin-top: 50px;
+}
+
+header, footer {
+  background: #2B2D42;
+  color: #8D99AE;
+}
+
+/* header */
+header h1, header h2 {
+  color: #EDF2F4;
+  margin: 0;
+}
+
+.profile-img {
+  // box-shadow: 1px 1px 5px 0px rgba(255,255,255,0.75);
+}
+
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

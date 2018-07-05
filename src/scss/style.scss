@@ -1,0 +1,52 @@
+@import "../libs/bootstrap/scss/bootstrap";
+@import "../libs/font-awesome/scss/font-awesome";
+@import "header";
+@import "work";
+@import "education";
+@import "skills";
+@import "footer";
+
+/* Work Experience
+-------------------------*/
+.work, .skills {
+  background: #EDF2F4;
+}
+
+.title {
+	@extend .text-uppercase, .font-weight-bold, .mb-4;
+	&:after {
+	    content: ""; // This is necessary for the pseudo element to work.
+	    display: block;
+	    width: 2rem;
+	    padding-top: .2rem;
+	    border-bottom: 4px solid red;
+    
+	}
+	&-center {
+		&:after {
+			content: ""; // This is necessary for the pseudo element to work.
+		    display: block;
+		    width: 2rem;
+		    padding-top: .2rem;
+		    border-bottom: 4px solid red;
+			margin: 0 auto;
+		}
+    }
+}
+
+p{
+	@extend .text-justify;
+	padding: 0;
+	margin: {
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+	span {
+		@extend .font-weight-bold;
+		a {
+			@extend .font-weight-normal;
+		}
+	}
+}

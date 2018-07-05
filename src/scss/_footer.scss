@@ -1,0 +1,11 @@
+footer {
+	@extend .text-center;
+	p {
+		@extend .text-center;
+	}
+	.contact-info {
+		a {
+			@extend .p-3, .d-inline-block;
+		}
+	}
+}

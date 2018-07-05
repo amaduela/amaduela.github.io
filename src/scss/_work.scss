@@ -1,0 +1,26 @@
+.box {
+	@extend .row, .mb-4;
+	.box-header {
+		@extend .col-md-4, .col-12;
+	}
+	.box-description {
+		@extend .col-md-8, .col-12;
+	}
+	section {
+		@extend .col-12;
+		h4 {
+			@extend .text-capitalize;
+		}
+	}
+}
+.box-title {
+	@extend .text-uppercase;
+	font-weight: 500 !important;
+	margin-bottom: 0;
+}
+.box-role, .box-period {
+	@extend .d-block;
+}
+.box-period {
+	@extend .font-italic;
+}
